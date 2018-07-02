@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <FrameLayout
+        android:id="@+id/video_container_max"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tiaooo.aaron.video.list.VideoPlayerView
+            android:id="@+id/video_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <com.yyl.multiplayerview.controller.MediaControllerMax
+        android:id="@+id/controller_max"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <com.yyl.multiplayerview.base.BaseMaxCoverView
+        android:id="@+id/videoplayer_max_layout_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/video_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transformBlack30"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/video_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_radius_video_error"
+            android:padding="10dp"
+            android:text="出错了点击重试"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/video_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transformBlack30"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/video_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/transformBlack80"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </FrameLayout>
+</FrameLayout>
