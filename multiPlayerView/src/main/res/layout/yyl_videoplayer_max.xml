@@ -39,8 +39,7 @@
             android:id="@+id/max_back"
             android:layout_width="60dp"
             android:layout_height="match_parent"
-            android:background="@null"
-            android:src="@drawable/btn_back" />
+            android:background="@null" />
 
         <TextView
             android:id="@+id/max_title"
@@ -51,7 +50,7 @@
             android:lines="1"
             android:text="dddddd"
             android:textColor="@color/white"
-            android:textSize="@dimen/text_size_16"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/max_back"
             app:layout_constraintTop_toTopOf="parent" />

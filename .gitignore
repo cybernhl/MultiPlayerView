@@ -4,7 +4,16 @@
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
+/.idea/caches/
+/.idea/caches
 .DS_Store
 /build
+/.idea
+/.idea/
 /captures
 .externalNativeBuild
+.idea/vcs.xml
+app/libs/
+
+multiPlayerView/libs/
+multiPlayerView/src/main/res/drawable-xxhdpi/
