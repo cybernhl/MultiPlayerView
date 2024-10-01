@@ -1,16 +1,17 @@
-package com.tiaooo.aaron.video.list.manager
+package com.yyl.multiplayerview.controller
 
 import android.app.Activity
 import android.content.Context
 import android.content.pm.ActivityInfo
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+
 import android.util.AttributeSet
 import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
 import android.widget.FrameLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.yyl.multiplayerview.MultiPlayerView
 import com.yyl.multiplayerview.R
 import com.yyl.multiplayerview.base.MediaListenerEvent
@@ -262,7 +263,7 @@ abstract class WindowLogic : FrameLayout, VideoPlayerOnClickEventListener {
     var currentState = 0
     private val onScrollVideoEvent by lazy {
         object : RecyclerView.OnScrollListener() {
-            override fun onScrollStateChanged(recyclerView: RecyclerView?, newState: Int) {
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 if (isFullScreenState) return
                 if (playerBase.isPrepare()) return
                 currentState = newState
@@ -285,7 +286,7 @@ abstract class WindowLogic : FrameLayout, VideoPlayerOnClickEventListener {
 
             }
 
-            override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 if (isFullScreenState) return
                 if (!isVideoOpened) return
                 minListWindowView?.apply {

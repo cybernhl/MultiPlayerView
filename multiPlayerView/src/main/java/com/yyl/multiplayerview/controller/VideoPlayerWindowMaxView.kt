@@ -7,6 +7,7 @@ import android.os.Message
 import android.util.AttributeSet
 import android.view.View
 import android.view.ViewGroup
+import com.yyl.multiplayerview.controller.WindowLogic
 import com.yyl.multiplayerview.impl.VideoState
 import com.yyl.multiplayerview.utils.MySensorListener
 import com.yyl.multiplayerview.utils._i

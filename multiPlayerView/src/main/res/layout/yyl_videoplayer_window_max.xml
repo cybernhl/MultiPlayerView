@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.tiaooo.aaron.video.list.VideoPlayerView
+        <com.yyl.multiplayerview.manager.VideoPlayerView
             android:id="@+id/video_player_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

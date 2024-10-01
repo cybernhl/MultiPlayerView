@@ -1,4 +1,4 @@
-package com.tiaooo.aaron.video.list
+package com.yyl.multiplayerview.manager
 
 import android.content.Context
 import android.util.AttributeSet
